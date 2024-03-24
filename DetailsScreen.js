@@ -156,8 +156,8 @@ const DetailsScreen = ({ navigation }) => {
             <TouchableOpacity onPress={() => handleDeleteProduct(index)} style={styles.deleteButton}>
               <Image source={require('./Screen/delete.png')} style={styles.deleteIcon} />
             </TouchableOpacity>
-            <Text style={styles.productName}>PRODUCT-{product.productName}</Text>
-            <Text style={styles.productAmount}>AMOUNT-${product.productAmount}</Text>
+            <Text style={styles.productName}>{product.productName}</Text>
+            <Text style={styles.productAmount}>${product.productAmount}</Text>
           </View>
         ))}
       </View>
